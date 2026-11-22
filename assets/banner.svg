@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#080c16" />
+    </linearGradient>
+
+    <!-- Vibrant Mesh Accents -->
+    <radialGradient id="meshGlow1" cx="20%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="meshGlow2" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="meshGlow3" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Linear Gradients for Typography -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <linearGradient id="subtextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="spatialGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+      <circle cx="40" cy="40" r="1.5" fill="rgba(99, 102, 241, 0.25)" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Keyframe Animations */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    @keyframes orbitFloat {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      50% { transform: translate(15px, -12px) rotate(180deg); }
+      100% { transform: translate(0, 0) rotate(360deg); }
+    }
+    @keyframes waveRay {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -80; }
+    }
+    @keyframes radarScan {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes nodeFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pillFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .pulse-bg {
+      animation: pulseGlow 8s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+    .wave-line {
+      stroke-dasharray: 8 12;
+      animation: waveRay 4s linear infinite;
+    }
+    .radar-sweep {
+      transform-origin: 1060px 100px;
+      animation: radarScan 10s linear infinite;
+    }
+    .floating-node {
+      animation: nodeFloat 4s ease-in-out infinite;
+    }
+    .node-delay-1 { animation-delay: -1.5s; }
+    .node-delay-2 { animation-delay: -3s; }
+    .node-delay-3 { animation-delay: -2.2s; }
+    .floating-pill {
+      animation: pillFloat 5s ease-in-out infinite;
+    }
+    .pill-delay-1 { animation-delay: -2s; }
+    .pill-delay-2 { animation-delay: -3.5s; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Ambient Glowing Nebulas (Background) -->
+  <rect width="1200" height="360" rx="16" fill="url(#meshGlow1)" class="pulse-bg" />
+  <rect width="1200" height="360" rx="16" fill="url(#meshGlow2)" class="pulse-bg" style="animation-delay: -4s;" />
+  <rect width="1200" height="360" rx="16" fill="url(#meshGlow3)" />
+
+  <!-- Perspective 3D Grid Overlay -->
+  <rect width="1200" height="360" rx="16" fill="url(#spatialGrid)" />
+
+  <!-- Dynamic Geometric Waves / Spatial Wireframe Curves (Midground) -->
+  <g opacity="0.35">
+    <path d="M -50 260 C 250 180, 450 340, 750 240 C 950 170, 1100 290, 1250 220" 
+          fill="none" stroke="url(#textGrad)" stroke-width="2.5" class="wave-line" />
+    <path d="M -50 290 C 200 220, 500 370, 800 270 C 1000 200, 1150 310, 1250 250" 
+          fill="none" stroke="#6366f1" stroke-width="1.5" class="wave-line" style="animation-delay: -2s;" />
+  </g>
+
+  <!-- Dynamic Decorative Spatial Elements (Right Side Graphic) -->
+  <g transform="translate(930, 60)" opacity="0.85">
+    <!-- Spatial Coordinate Sphere Rings -->
+    <ellipse cx="130" cy="120" rx="100" ry="40" fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" stroke-dasharray="4 6" transform="rotate(-25 130 120)" />
+    <ellipse cx="130" cy="120" rx="100" ry="40" fill="none" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.5" stroke-dasharray="4 6" transform="rotate(35 130 120)" />
+    <ellipse cx="130" cy="120" rx="90" ry="90" fill="none" stroke="rgba(99, 102, 241, 0.2)" stroke-width="1" />
+
+    <!-- 3D Hand Tracking Landmark Skeleton Simulation -->
+    <!-- Wrist -->
+    <circle cx="130" cy="180" r="5" fill="#38bdf8" filter="url(#neonGlow)" class="floating-node" />
+    <!-- Palm center -->
+    <circle cx="130" cy="140" r="6" fill="#818cf8" filter="url(#neonGlow)" class="floating-node node-delay-1" />
+    <!-- Thumb -->
+    <line x1="130" y1="180" x2="85" y2="150" stroke="rgba(129, 140, 248, 0.6)" stroke-width="2" />
+    <circle cx="85" cy="150" r="4" fill="#38bdf8" class="floating-node node-delay-2" />
+    <line x1="85" y1="150" x2="65" y2="120" stroke="rgba(129, 140, 248, 0.6)" stroke-width="2" />
+    <circle cx="65" cy="120" r="4.5" fill="#c084fc" class="floating-node node-delay-3" />
+    <!-- Index Finger (Pointing / Laser Beam) -->
+    <line x1="130" y1="140" x2="110" y2="90" stroke="rgba(56, 189, 248, 0.8)" stroke-width="2" />
+    <circle cx="110" cy="90" r="4.5" fill="#38bdf8" class="floating-node node-delay-1" />
+    <line x1="110" y1="90" x2="105" y2="45" stroke="rgba(56, 189, 248, 0.9)" stroke-width="2" />
+    <circle cx="105" cy="45" r="5.5" fill="#f472b6" filter="url(#neonGlow)" class="floating-node" />
+    <!-- Virtual Ray Pointer Beam -->
+    <line x1="105" y1="45" x2="45" y2="-10" stroke="url(#textGrad)" stroke-width="2.5" stroke-dasharray="6 4" class="wave-line" />
+    <!-- Middle Finger -->
+    <line x1="130" y1="140" x2="135" y2="85" stroke="rgba(129, 140, 248, 0.6)" stroke-width="2" />
+    <circle cx="135" cy="85" r="4" fill="#818cf8" class="floating-node node-delay-2" />
+    <line x1="135" y1="85" x2="140" y2="40" stroke="rgba(129, 140, 248, 0.6)" stroke-width="2" />
+    <circle cx="140" cy="40" r="4" fill="#a855f7" class="floating-node node-delay-1" />
+    <!-- Ring & Pinky -->
+    <line x1="130" y1="140" x2="160" y2="95" stroke="rgba(129, 140, 248, 0.5)" stroke-width="2" />
+    <circle cx="160" cy="95" r="3.5" fill="#818cf8" class="floating-node" />
+    <line x1="160" y1="95" x2="170" y2="55" stroke="rgba(129, 140, 248, 0.5)" stroke-width="2" />
+    <circle cx="170" cy="55" r="3.5" fill="#a855f7" class="floating-node node-delay-3" />
+    
+    <line x1="130" y1="140" x2="185" y2="115" stroke="rgba(129, 140, 248, 0.5)" stroke-width="2" />
+    <circle cx="185" cy="115" r="3" fill="#818cf8" class="floating-node node-delay-2" />
+    <line x1="185" y1="115" x2="195" y2="80" stroke="rgba(129, 140, 248, 0.5)" stroke-width="2" />
+    <circle cx="195" cy="80" r="3" fill="#38bdf8" class="floating-node node-delay-1" />
+
+    <!-- Pulsing Spatial Target Rings -->
+    <circle cx="45" cy="-10" r="14" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.8" class="pulse-bg" />
+    <circle cx="45" cy="-10" r="4" fill="#f472b6" filter="url(#neonGlow)" />
+  </g>
+
+  <!-- Left Side Ambient Decorator Elements (Pills & Sensors) -->
+  <g opacity="0.75">
+    <!-- 6DoF Motion Pill -->
+    <g transform="translate(60, 48)" class="floating-pill">
+      <rect width="130" height="28" rx="14" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+      <circle cx="16" cy="14" r="5" fill="#38bdf8" />
+      <text x="30" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" letter-spacing="0.5">6DoF IMU SENSOR</text>
+    </g>
+    <!-- WebXR & Vision Pill -->
+    <g transform="translate(205, 48)" class="floating-pill pill-delay-1">
+      <rect width="145" height="28" rx="14" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1" />
+      <circle cx="16" cy="14" r="5" fill="#c084fc" />
+      <text x="30" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" letter-spacing="0.5">WEBCAM CV TRACKING</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND: Crisp Title & Subtitle (Guaranteed Legibility & Priority) -->
+  <g transform="translate(60, 150)">
+    <!-- Main Title -->
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', Roboto, Helvetica, Arial, sans-serif" font-size="42" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.8">
+      Spatial Presentation &amp; Gesture Control
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Text', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="url(#subtextGrad)">
+      Curated Ecosystem of Touchless Slide Decks, Spatial Collaboration, Wearable IMU Air-Pointers &amp; Vision Hand-Tracking
+    </text>
+
+    <!-- Feature Tags Row -->
+    <g transform="translate(0, 82)">
+      <!-- Tag 1 -->
+      <g class="floating-pill">
+        <rect width="112" height="28" rx="6" fill="rgba(99, 102, 241, 0.18)" stroke="rgba(99, 102, 241, 0.5)" stroke-width="1" />
+        <text x="14" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#a5b4fc">✨ Touchless UI</text>
+      </g>
+      <!-- Tag 2 -->
+      <g transform="translate(122, 0)" class="floating-pill pill-delay-1">
+        <rect width="148" height="28" rx="6" fill="rgba(56, 189, 248, 0.18)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1" />
+        <text x="14" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#7dd3fc">🌐 WebXR &amp; OpenXR</text>
+      </g>
+      <!-- Tag 3 -->
+      <g transform="translate(280, 0)" class="floating-pill pill-delay-2">
+        <rect width="144" height="28" rx="6" fill="rgba(244, 114, 182, 0.18)" stroke="rgba(244, 114, 182, 0.5)" stroke-width="1" />
+        <text x="14" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f472b6">🎯 3D Air-Pointers</text>
+      </g>
+      <!-- Tag 4 -->
+      <g transform="translate(434, 0)" class="floating-pill">
+        <rect width="170" height="28" rx="6" fill="rgba(52, 211, 153, 0.18)" stroke="rgba(52, 211, 153, 0.5)" stroke-width="1" />
+        <text x="14" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#6ee7b7">🖐️ 21-Landmark Tracking</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Border -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#textGrad)" />
+</svg>
