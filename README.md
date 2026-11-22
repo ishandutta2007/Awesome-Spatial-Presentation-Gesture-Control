@@ -1,26 +1,27 @@
-# Awesome-Spatial-Presentation-Gesture-Control
+# Awesome-Static-Site-Generation-Web-Publishing
+# Awesome-Static-Site-Generation-Web-Publishing
 
-## Top Spatial Presentation & Gesture Control Ecosystem
+## Top Static Site Generation & Web Publishing Ecosystem
 
 
 
 **Curated List of SaaS/Hosted Platforms & Open-Source GitHub Projects**  
 
-*Focused on Spatial Collaboration, XR/WebXR Workspaces, IMU Air-Pointers, Hand-Tracking & Touchless Presentation Control*  
+*Focused on Static Site Generators (SSGs), Self-Hosted Publishing Platforms, Newsletter Engines & Lean Web Workflows*  
 
 **Last updated: November 2026**
 
 
 
-This repository tracks notable **SaaS/hosted spatial platforms** and **open-source GitHub projects** for **Spatial Presentation & Gesture Control**. These tools enable speakers, designers, educators, and distributed teams to present in 3D virtual rooms, navigate slides hands-free via computer vision or inertial sensors, and control desktop cursors in mid-air using everyday hardware.
+This repository tracks notable **SaaS/hosted web publishing platforms** and **open-source GitHub projects** for **Static Site Generation & Web Publishing**. These tools enable writers, developers, publishers, and organizations to create, manage, and distribute static websites, technical blogs, newsletters, and membership publications with speed and full content ownership.
 
 
 
-**Examples** include musubipapi/airpointer, MediaPipe Hands, OpenCV Gesture Presenters, Mozilla Hubs / Hubs Foundation, Vircadia, Overte, Exokit / WebXR engines, Spatial.io, ShapesXR, Campfire 3D, Arthur VR, Immersed, MeetinVR, Glue Collaboration, Horizon Workrooms, Engage VR, and vSpatial.
+**Examples** include Astro, Hugo, Zola, Eleventy (11ty), Ghost, WordPress, WriteFreely, Listmonk, Buttondown alternatives, Forem, DietrichGebert/ponytail, Substack, Medium, Webflow, Framer, WordPress VIP, Hashnode, Dev.to, Squarespace, and Wix Studio.
 
 
 
-**Open-source emphasis**: This list heavily expands on active open-source inertial air-pointers, webcam hand-tracking presentation controllers, WebXR multi-user virtual rooms, and open spatial computing runtimes — ideal for presenters, XR developers, HCI researchers, and makers building touchless or immersive presentation setups without vendor lock-in.
+**Open-source emphasis**: This list heavily expands on active open-source static site generators, self-hosted blogging/newsletter platforms, visual web builders, and lean coding rulesets that eliminate unnecessary web bloat — ideal for independent publishers, developers, and teams building fast, sovereign web properties.
 
 
 
@@ -44,63 +45,57 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[Spatial (Spatial.io)](https://spatial.io)**  
+- **[Substack](https://substack.com)**  
 
-  Cross-platform 3D spatial collaboration and virtual presentation platform accessible across VR headsets, web browsers, and mobile devices.
-
-
-
-- **[ShapesXR](https://shapesxr.com)**  
-
-  Collaborative spatial design, 3D storyboarding, and interactive presentation platform built for XR product teams on Meta Quest and Apple Vision Pro.
+  Popular hosted newsletter and subscription publishing platform enabling writers and independent journalists to monetize essays, podcasts, and community threads.
 
 
 
-- **[Campfire 3D](https://campfire3d.com)**  
+- **[Medium](https://medium.com)**  
 
-  Holographic and spatial collaboration platform enabling engineering and design teams to review and present interactive 3D models across headsets, PCs, and tablets.
-
-
-
-- **[Arthur VR](https://arthur.digital)**  
-
-  Enterprise virtual reality office and spatial meeting platform offering persistent 3D presentation rooms, spatial audio, and multi-screen collaboration.
+  Hosted social publishing platform and reading network with built-in distribution, clean typography, and partner monetization programs.
 
 
 
-- **[Immersed](https://immersed.com)**  
+- **[Webflow](https://webflow.com)**  
 
-  Spatial productivity and virtual workspace platform allowing users to project multiple virtual desktop monitors and collaborate in shared VR rooms.
-
-
-
-- **[MeetinVR](https://meetinvr.com)**  
-
-  Commercial virtual reality meeting and interactive presentation suite designed for workshops, product showcases, and spatial whiteboarding.
+  Visual web design, CMS, and managed hosting SaaS platform generating semantic HTML, CSS, and JavaScript with global CDN delivery.
 
 
 
-- **[Glue Collaboration](https://glue.work)**  
+- **[Framer](https://framer.com)**  
 
-  Cloud-hosted spatial collaboration platform combining customizable 3D environments, spatial audio, and persistent presentation boards for remote teams.
-
-
-
-- **[Meta Horizon Workrooms](https://meta.com)**  
-
-  Meta's virtual reality workspace and mixed-reality desk integration platform for remote meetings, whiteboarding, and screen-shared presentations.
+  Interactive no-code visual website builder and hosting platform geared toward high-craft marketing sites, blogs, and landing pages.
 
 
 
-- **[ENGAGE XR (Engage VR)](https://engagevr.io)**  
+- **[WordPress VIP](https://wpvip.com)**  
 
-  Spatial communications and virtual event platform tailored for education, corporate training, and large-scale 3D presentations.
+  Enterprise-grade managed WordPress cloud platform engineered for high-traffic media publishers, newsrooms, and global brands.
 
 
 
-- **[vSpatial](https://vspatial.com)**  
+- **[Hashnode](https://hashnode.com)**  
 
-  Spatial computing workplace application enabling users to arrange multi-monitor desktop apps and presentations inside an ergonomic 3D carousel.
+  Developer-focused blogging and technical publishing platform supporting custom domains, GitHub Markdown backup, and built-in newsletter distribution.
+
+
+
+- **[Dev.to (Forem Hosted)](https://dev.to/)**  
+
+  Hosted developer blogging and community publishing network powered by Forem, featuring Markdown authoring, tags, and syndication tools.
+
+
+
+- **[Squarespace](https://squarespace.com)**  
+
+  All-in-one hosted website builder, blogging engine, and e-commerce publishing SaaS with designer templates and managed infrastructure.
+
+
+
+- **[Wix Studio](https://wix.com)**  
+
+  Collaborative web creation and managed hosting platform built for agencies and enterprises with responsive layout controls and integrated CMS.
 
 
 
@@ -110,75 +105,81 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[AirPointer (musubipapi/airpointer)](https://github.com/musubipapi/airpointer)**  
+- **[Ghost](https://github.com)**  
 
-  Open-source macOS utility that turns an AirPods Pro case into a spatial air-pointer and clicker using built-in motion sensors over Bluetooth without opening the lid.
-
-
-
-- **[Google MediaPipe (Hand Landmarker & Gesture Recognizer)](https://github.com)**  
-
-  Cross-platform, open-source machine learning pipeline delivering real-time 21-point 3D hand tracking and gesture recognition for touchless presentation and spatial UI control.
+  Leading open-source publishing, newsletter, and paid membership platform built on Node.js — deployable both as a full-stack publication or a headless CMS for static frontends.
 
 
 
-- **[Vircadia](https://github.com)**  
+- **[Astro](https://github.com)**  
 
-  Open-source decentralized virtual world and spatial collaboration engine supporting multi-user 3D presentations, spatial audio, and WebXR/desktop clients.
-
-
-
-- **[Overte](https://github.com)**  
-
-  Community-driven, open-source social VR and spatial collaboration platform (forked from High Fidelity) for self-hosted 3D events, classrooms, and interactive presentations.
+  Modern web framework built for content-heavy websites, blogs, and publications that ships zero client-side JavaScript by default via Islands Architecture.
 
 
 
-- **[Hubs Foundation (Mozilla Hubs Community Edition)](https://github.com)**  
+- **[Hugo](https://github.com)**  
 
-  Open-source, browser-based WebXR spatial meeting and presentation platform supporting 3D model sharing, screen casting, and spatial audio without app installs.
-
-
-
-- **[StereoKit](https://github.com)**  
-
-  Easy-to-use, open-source C# OpenXR library engineered for rapidly building spatial UIs, hand-tracked interfaces, and mixed-reality presentation apps.
+  Ultra-fast static site generator written in Go capable of building massive multi-author blogs and news archives from Markdown in milliseconds.
 
 
 
-- **[Lovr](https://github.com)**  
+- **[Zola](https://github.com)**  
 
-  Ultra-lightweight, open-source Lua framework for rapidly prototyping 3D, VR, and spatial hand-tracking experiences across desktop and standalone headsets.
-
-
-
-- **[A-Frame](https://github.com)**  
-
-  Popular open-source web framework for building declarative 3D and WebXR spatial presentations and virtual galleries using standard HTML.
+  Single-binary, zero-dependency static site generator written in Rust with built-in Sass compilation, Tera templates, syntax highlighting, and search indexing.
 
 
 
-- **[Networked-Aframe](https://github.com)**  
+- **[Eleventy (11ty)](https://github.com)**  
 
-  Open-source WebRTC framework built on A-Frame for creating multi-user spatial rooms with synchronized avatars, pointers, and live audio.
-
-
-
-- **[Gesture-Controlled Presentation System (srutipathak/gesture-control-presentation-system)](https://github.com/srutipathak/gesture-control-presentation-system)**  
-
-  Open-source Python computer-vision presenter utilizing OpenCV, MediaPipe, and PyAutoGUI to navigate Google Slides and PowerPoint decks hands-free via webcam.
+  Flexible, zero-client-JS static site generator supporting Markdown, Liquid, Nunjucks, and WebC for clean, standards-first web publishing.
 
 
 
-- **[Gesture-Controlled Presentation (TechBot505/Gesture-Controlled-Presentation)](https://github.com/TechBot505/Gesture-Controlled-Presentation)**  
+- **[WordPress (WordPress.org)](https://github.com)**  
 
-  Open-source slideshow controller built with Python, OpenCV, and `cvzone` supporting mid-air slide navigation, virtual laser pointing, and live finger-drawn annotations.
+  The world's most widely deployed open-source CMS and web publishing engine, extensible with static-export plugins like Simply Static for Jamstack delivery.
 
 
 
-- **[Hand-Gesture Smart Presentation Controller (Pdanulya/Hand-Gesture-Smart-Presentation-Controller)](https://github.com/Pdanulya/Hand-Gesture-Smart-Presentation-Controller)**  
+- **[Forem](https://github.com)**  
 
-  Webcam-based spatial presentation utility combining swipe-gesture slide switching, real-time virtual cursor positioning, and an interactive annotation canvas.
+  The open-source Ruby on Rails community and publishing software that powers Dev.to, enabling self-hosted developer and niche publishing networks.
+
+
+
+- **[WriteFreely](https://github.com)**  
+
+  Minimalist, distraction-free open-source blogging and publishing platform written in Go with native ActivityPub/Fediverse federation.
+
+
+
+- **[Listmonk](https://github.com)**  
+
+  High-performance, self-hosted newsletter and mailing list manager written in Go with a single-binary deployment and PostgreSQL backend (popular Substack alternative).
+
+
+
+- **[GrapesJS](https://github.com)** & **[Webstudio](https://github.com)**  
+
+  Open-source visual web builders (Webflow alternatives) that output clean, standards-compliant HTML and CSS without proprietary vendor lock-in.
+
+
+
+- **[Jekyll](https://github.com)**  
+
+  Battle-tested Ruby static site generator that converts Markdown and Liquid templates into static blogs and powers GitHub Pages natively.
+
+
+
+- **[Docusaurus](https://github.com)** & **[VitePress](https://github.com)**  
+
+  Modern React/MDX and Vue/Vite static site generators optimized for technical publishing, documentation portals, and developer blogs.
+
+
+
+- **[Ponytail (DietrichGebert/ponytail)](https://github.com/dietrichgebert/ponytail)**  
+
+  Open-source AI coding agent ruleset and plugin that enforces YAGNI, standard library primitives, and minimal custom code — keeping static web builds and custom publishing pipelines lean and bloat-free.
 
 
 
@@ -186,21 +187,21 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[Monado](https://freedesktop.org)** — Open-source OpenXR runtime for Linux enabling spatial tracking, hand-tracking drivers, and XR display composition.
+- **[Publii](https://github.com)** — Desktop-based static CMS for Windows, macOS, and Linux that builds offline and pushes static sites via Git, SFTP, or S3.
 
-- **[ALVR](https://github.com)** — Open-source VR streaming software for projecting PC spatial workspaces and presentations wirelessly to standalone headsets.
+- **[Decap CMS](https://github.com)** & **[Pages CMS](https://github.com)** — Open-source Git-backed editorial interfaces providing a friendly CMS workflow over Markdown files in GitHub repositories.
 
-- **[Slidev](https://github.com)** & **[Reveal.js](https://github.com)** — Developer-first, web-based presentation frameworks easily paired with WebSocket gesture controllers or WebXR overlays.
+- **[Pelican](https://github.com)** & **[Lektor](https://github.com)** — Mature Python static site generators with flexible templating and built-in admin interfaces (`Lektor`).
 
-- **[OpenSpace3D](https://openspace3d.com)** — Free and open-source platform for creating interactive 3D, AR, and VR presentations with sensor and gesture support.
+- **[Remark42](https://github.com)** & **[Giscus](https://github.com)** — Self-hosted, privacy-first commenting engines built for static blogs and Markdown publications.
 
-- **[FreeTrack / OpenTrack](https://github.com)** — Open-source head and 6DOF motion tracking software bridging webcam, IMU, and IR sensors to spatial desktop environments.
+- **[Plausible Analytics](https://github.com)** & **[Umami](https://github.com)** — Lightweight, cookie-free, open-source web analytics designed for static sites and independent publishers.
 
-- **[MousePods (starman-tech/mousepods)](https://github.com)** — Open-source Linux utility leveraging AirPods head-tracking motion sensors as a spatial air-mouse.
+- **[mkdocs-material](https://github.com)** — Feature-rich technical publishing and documentation framework built on Python's MkDocs.
 
 
 
-**Frameworks for building custom systems**: Combine **MediaPipe** + **OpenCV** + **Slidev** for webcam-driven touchless slide decks, pair **AirPointer** with any macOS keynote deck for pocket-sized IMU pointer control, or self-host **Hubs Community Edition** / **Overte** for multiplayer 3D spatial presentations.
+**Frameworks for building custom systems**: Combine **Astro** or **Hugo** with **Pages CMS** for editorial workflows, **Listmonk** for self-hosted newsletters, **Giscus** for comments, and **Umami** for privacy-friendly analytics.
 
 
 
@@ -228,9 +229,9 @@ Star the repo if you find it useful!
 
 - This is a **community-curated** list — not exhaustive and not an endorsement.
 
-- Bluetooth HID/motion utilities (such as `musubipapi/airpointer`) and webcam gesture controllers require explicit OS accessibility or camera permissions; audit build scripts before granting system-wide input control.
+- Always install AI agent skills and CLI plugins (such as `DietrichGebert/ponytail`) exclusively from official GitHub repositories or verified npm packages, and audit third-party theme dependencies before building.
 
-- Self-hosted WebXR and multiplayer spatial servers require valid TLS certificates (HTTPS) for browser WebXR and WebRTC microphone/camera APIs to function.
+- Self-hosted publishing and newsletter engines require proper SMTP configuration (SPF/DKIM/DMARC), TLS certificates, and regular database backups.
 
 
 
@@ -238,6 +239,6 @@ Star the repo if you find it useful!
 
 
 
-**Made for XR creators, keynote speakers, HCI researchers, and open-source developers.**  
+**Made for independent writers, technical bloggers, web developers, and open-source publishers.**  
 
-Let's make spatial presentations and touchless gesture control intuitive, accessible, and open to everyone.
+Let's make static site generation and web publishing faster, leaner, and open to everyone.
