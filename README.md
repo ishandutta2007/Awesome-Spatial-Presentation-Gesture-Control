@@ -75,7 +75,7 @@ The table below outlines leading commercial SaaS and hosted platforms for spatia
 
 Below are the most prominent open-source projects for gesture recognition, spatial computing runtimes, WebXR presentation platforms, and motion air-pointers, ranked strictly in descending order by GitHub stargazer count 🌟.
 
-| Project & Repository | GitHub Stars | Core Language / Stack | Key Capabilities & Features |
+| Project & Repository | GitHub_Stars | Core Language / Stack | Key Capabilities & Features |
 | :--- | :--- | :--- | :--- |
 | **[Reveal.js](https://github.com/hakimel/reveal.js)** | [![Stars](https://img.shields.io/github/stars/hakimel/reveal.js?style=social&color=white)](https://github.com/hakimel/reveal.js/stargazers) | JavaScript / HTML5 | The leading open-source HTML presentation framework; easily integrated with MediaPipe webcam gestures, WebSockets, or leap motion sensor controllers. |
 | **[Slidev](https://github.com/slidevjs/slidev)** | [![Stars](https://img.shields.io/github/stars/slidevjs/slidev?style=social&color=white)](https://github.com/slidevjs/slidev/stargazers) | Vue.js / TypeScript | Developer-focused presentation slide maker powered by Markdown; provides native Web components, slide hooks, and WebSocket APIs ideal for touchless gesture triggers. |
